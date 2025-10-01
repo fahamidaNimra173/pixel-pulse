@@ -6,10 +6,12 @@ import Solutions from "@/components/Solutions";
 import FAQ from "@/components/FAQ";
 import TestimonialSlider from "@/components/Testimonial";
 import SuccessStories from "@/components/SuccessStories";
+import Footer from "@/components/shared/Footer";
 
 export default function Home() {
   return (
     <div>
+
       <Banner></Banner>
       <LogoMarquee></LogoMarquee>
       <StatsSection/>
@@ -17,6 +19,8 @@ export default function Home() {
       <FAQ></FAQ>
       <TestimonialSlider></TestimonialSlider>
       <SuccessStories></SuccessStories>
+      <Footer></Footer>
+      
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { MdOutlineSlowMotionVideo } from "react-icons/md";
 
 export default function Banner() {
   return (
-    <section className="px-[75px] mb-[64px] flex items-center justify-between gap-[105px] mt-[63px]">
+    <section className="px-[75px] mb-[64px] mt-[153px] flex items-center justify-between gap-[105px] ">
       <div>
         <h1 className="font-extrabold text-[50px] leading-15 w-[646px] text-[#101010]">
           Driving Your{" "}

@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 
 export default function Navbar(){
     return(
-        <section className="px-[75px] py-[43px]">
+        <section className="px-[75px] bg-white pb-1 fixed w-full z-100 top-0 pt-[43px] ">
             <div className="flex items-end justify-between">
                 <div>
                     <Image
