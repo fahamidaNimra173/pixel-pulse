@@ -4,14 +4,15 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 
 const nunitoSans = Nunito_Sans({
-  variable: "--font-nunito-sans",
+ 
   subsets: ["latin"],
+  display:"swap"
 });
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
+// const inter = Inter({
+//   variable: "--font-inter",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunitoSans.variable} ${inter.variable} antialiased`}
+        className={`${nunitoSans.className} antialiased`}
       >
         <Navbar/>
         {children}

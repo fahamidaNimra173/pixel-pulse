@@ -1,7 +1,12 @@
 
-import React from "react";
+import React, { ReactNode } from "react";
+interface ButtonProps {
+  children: ReactNode; 
+  type?: "button" | "submit" | "reset"; 
+  className?: string; 
+}
 
-const Button = ({ children,  type = "button", className = "" }) => {
+const Button:React.FC<ButtonProps> = ({ children,  type = "button", className = "" }) => {
   return (
     <button
       type={type}
