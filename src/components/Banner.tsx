@@ -23,7 +23,7 @@ export default function Banner() {
 
         <div className="flex items-center gap-[21px] mt-[50px]">
           <Button>Get Started</Button>
-          <button className="flex items-center gap-2.5 px-5 py-2.5 rounded-[100px] bg-transparent border border-black text-black">
+          <button className="flex cursor-pointer hover:bg-[#FA7C45] hover:text-white hover:border-[#FA7C45] items-center gap-2.5 px-5 py-2.5 rounded-[100px] bg-transparent border border-black text-black">
             <MdOutlineSlowMotionVideo /> Play Video
           </button>
         </div>
