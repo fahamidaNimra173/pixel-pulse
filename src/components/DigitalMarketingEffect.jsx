@@ -25,9 +25,9 @@ export default function StatsSection() {
 
                     </h2>
                     <p className="text-lg mt-5 text-[#2c2c2c]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                       Digital marketing services help businesses reach the right audience, increase brand awareness, and drive sales effectively. By leveraging online strategies, companies can grow their customer base and boost revenue efficiently.
                     </p>
-                    <p className="mt-5 text-[#2c2c2c]">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>
+                    <p className="mt-5 text-[#2c2c2c]">Digital marketing strategies are designed to engage audiences without causing overwhelm or intrusive experiences. While campaigns aim to maximize reach and conversions, they respect user privacy and ensure ethical practices at every step.</p>
                 </div>
 
 
@@ -48,13 +48,13 @@ export default function StatsSection() {
 
 
             {/* Image on the side */}
-            <div className="">
+            <div className="overflow-hidden">
                 <Image
                     src="/marketing effect.png"
                     alt="Banner"
                     width={500}
                     height={500}
-                    className="object-cover h-full w-full"
+                    className="object-cover h-full transition-transform duration-500 hover:scale-105 w-full"
                 />
             </div>
         </section>

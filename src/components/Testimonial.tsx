@@ -106,7 +106,7 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({ testimonials }) =
               <SwiperSlide key={index}>
                 <div className="bg-white rounded-2xl shadow-sm p-8 md:p-12">
                   <p className="text-xl md:text-2xl text-wrap  text-gray-700 leading-relaxed mb-8">
-                    "{testimonial.comment}"
+                    &quot;{testimonial.comment}&quot;
                   </p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4">
