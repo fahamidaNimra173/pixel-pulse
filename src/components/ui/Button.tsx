@@ -1,4 +1,4 @@
-
+'use client'
 import React, { ReactNode } from "react";
 interface ButtonProps {
   children: ReactNode; 
@@ -7,11 +7,15 @@ interface ButtonProps {
 }
 
 const Button:React.FC<ButtonProps> = ({ children,  type = "button", className = "" }) => {
+const handleClick=()=>{
+  console.log('this button has clicked')
+}
   return (
     <button
+    onClick={handleClick}
       type={type}
     //   onClick={onClick}
-      className={`bg-[#FA7C45] text-white cursor-pointer font-semibold px-5 py-2.5 rounded-[100px] transition-all hover:bg-[#fd6727] ${className}`}
+      className={`bg-[#FA7C45]  text-white cursor-pointer font-semibold px-5 py-2.5 rounded-[100px] transition-all hover:bg-[#fd6727] ${className}`}
     >
       {children}
     </button>

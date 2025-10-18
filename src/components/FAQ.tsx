@@ -44,17 +44,17 @@ const FAQ: React.FC<FAQProps> = ({ faqs }) => {
     };
 
     return (
-        <div className="w-full py-16 px-6 md:px-12 lg:px-20">
+        <div className="w-full md:py-16 py-10 px-6 md:px-12 lg:px-20">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
                     {/* Left Side - Title */}
                     <div>
-                        <h2 className="text-[44px] font-semibold  text-gray-900 leading-tight">
+                        <h2 className="md:text-[44px] text-3xl md:text-left text-center font-semibold  text-gray-900 leading-tight">
                             Common Questions
                             <br />
                             <span className="text-[#FF6B47]">Answered</span>
                         </h2>
-                        <p className="mt-6 text-[#272727] text-base w-[429px] md:text-lg leading-relaxed">
+                        <p className="mt-6 text-[#272727] text-base md:w-[429px] md:text-lg leading-relaxed">
                             On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment,
                         </p>
                     </div>

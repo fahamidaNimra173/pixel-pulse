@@ -87,10 +87,10 @@ const LogoMarquee: React.FC<LogoMarqueeProps> = ({ logos, speed = 50 }) => {
   };
 
   return (
-    <div className="w-full overflow-hidden  py-8">
+    <div className="w-full overflow-hidden  md:py-8">
       <div className="flex  items-center justify-center">
         {/* Trust Badge */}
-        <div className="relative flex-shrink-0 bg-[#FA7C45] z-0 px-12 py-8 text-white clip-path-slant">
+        <div className="relative flex-shrink-0 bg-[#FA7C45] z-0 px-6 py-4 md:px-12 md:py-8 text-white clip-path-slant">
           <div className="relative z-60">
             <p className="text-2xl font-bold leading-tight">
               More Than 6,000<br />

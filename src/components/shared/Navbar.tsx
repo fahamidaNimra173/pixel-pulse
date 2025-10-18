@@ -35,7 +35,7 @@ export default function Navbar() {
         setClicked(false)
     }
     return (
-        <section className="lg:px-[75px] px-6 bg-white pb-1 fixed w-full z-100 top-0 py-6 ">
+        <section className="lg:px-[75px] px-6 bg-white pb-1 fixed w-full z-100 top-0 md:py-6 ">
             <div className="absolute -z-10 -top-70 -left-50">
                 <Ellipse />
             </div>

@@ -52,17 +52,17 @@ export default function Solutions() {
     const [hoveredId, setHoveredId] = useState<number | null>(null);
 
     return (
-        <section className="px-[165px] py-16 text-black">
+        <section id="services" className="lg:px-[165px] px-6 py-10 lg:py-16 text-black">
             <div className="max-w-7xl mx-auto flex flex-col gap-6">
-                <h1 className="text-[44px] leading-14 text-center mx-auto w-[881px] font-extrabold">
+                <h1 className="md:text-[44px] text-3xl leading-11 md:leading-14 text-center mx-auto lg:w-[881px] font-extrabold">
                     Strengthening Your <span className="text-[#FA7C45]">Business</span><br /> with Trusted <span className="text-[#FA7C45]">Digital Marketing</span>
                 </h1>
-                <p className="text-lg font-semibold text-center mx-auto w-[652px] text-[#2c2c2c]">
+                <p className="text-lg font-semibold text-center mx-auto lg:w-[652px] text-[#2c2c2c]">
                     At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
                 </p>
 
                 {/* Cards Grid */}
-                <div className="grid grid-cols-2  gap-[30px] mt-10 relative">
+                <div className="grid grid-cols-1 md:grid-cols-2  gap-[30px] mt-10 relative">
                     {solutions.map((solution) => (
                         <div
                             key={solution.id}
@@ -71,9 +71,9 @@ export default function Solutions() {
                             onMouseLeave={() => setHoveredId(null)}
                         >
                             <div className="p-[30px]  flex flex-col gap-11 bg-[#fafafa] border-1 border-[#D9D9D9]">
-                                <div className="flex items-center gap-7">
+                                <div className="flex md:flex-row flex-col items-center gap-7">
                                     <div className="bg-[#FA7C45] rounded-full text-white p-4">{solution.icon}</div>
-                                    <h2 className=" w-[294px] text-black font-semibold text-[32px] leading-10"> {solution.title}</h2>
+                                    <h2 className=" w-[294px] text-black text-center font-semibold text-[32px] leading-10"> {solution.title}</h2>
                                 </div>
                                 <Image
                                     src={solution.image}

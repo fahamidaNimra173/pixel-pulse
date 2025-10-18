@@ -82,8 +82,8 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({ testimonials }) =
   const testimonialList = testimonials || defaultTestimonials;
 
   return (
-    <div className="w-full py-[150px] px-6 md:px-12 lg:px-20">
-      <div className="max-w-5xl mx-auto">
+    <div className="w-full py-10 md:py-[150px] px-6 md:px-12 lg:px-20">
+      <div className="md:max-w-5xl w-full mx-auto">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-900 mb-8">
           Do not Just Take Our Word for It— <br />
@@ -104,7 +104,7 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({ testimonials }) =
           >
             {testimonialList.map((testimonial, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-white rounded-2xl shadow-sm p-8 md:p-12">
+                <div className="bg-white rounded-2xl shadow-sm border-b-4 pb-3 md:p-12">
                   <p className="text-xl md:text-2xl text-wrap  text-gray-700 leading-relaxed mb-8">
                     &quot;{testimonial.comment}&quot;
                   </p>

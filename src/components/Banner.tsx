@@ -4,18 +4,18 @@ import { MdOutlineSlowMotionVideo } from "react-icons/md";
 
 export default function Banner() {
   return (
-    <section className="px-[75px] mb-[64px] mt-[153px] flex items-center justify-between gap-[105px] ">
+    <section className="lg:px-[75px] px-6 md:mb-[64px] mt-30 lg:mt-[153px] flex lg:flex-row flex-col items-center lg:justify-between lg:gap-[105px] ">
       <div>
-        <h1 className="font-extrabold text-[50px] leading-15 w-[646px] text-[#101010]">
+        <h1 className="font-extrabold  text-3xl md:text-[50px] leading-13 lg:leading-15 w-full text-center lg:w-[646px] text-[#101010]">
           Driving Your{" "}
           <span className="text-[#FA7C45] font-bold">
             Business Forward with Cutting-Edge Digital{" "}
-            <span className="text-[#FA7C45] font-bold">
+            <span className=" lg:text-[#FA7C45] text-black font-bold">
               Marketing Solutions
             </span>
           </span>
         </h1>
-        <p className="w-[571px] mt-3 text-[20px] font-semibold text-[#2c2c2c]">
+        <p className="lg:w-[571px] mt-3 text-lg lg:text-[20px] font-semibold text-[#2c2c2c]">
           But I must explain to you how all this mistaken idea of denouncing
           pleasure and praising pain was born and I will give you a complete
           account of the system,
@@ -30,12 +30,12 @@ export default function Banner() {
       </div>
 
     
-      <div className="relative w-[544px] h-[522px]">
+      <div className="relative w-[544px] lg:mt-0 -mt-15 h-[522px]">
         <Image
           src="/banner.png"
           alt="Banner image"
           fill
-          className="object-cover "
+          className="md:object-cover  object-contain "
           
         />
       </div>
