@@ -87,23 +87,22 @@ const LogoMarquee: React.FC<LogoMarqueeProps> = ({ logos, speed = 50 }) => {
   };
 
   return (
-    <div className="w-full overflow-hidden  md:py-8">
-      <div className="flex  items-center justify-center">
-        {/* Trust Badge */}
-        <div className="relative flex-shrink-0 bg-[#FA7C45] z-0 px-6 py-4 md:px-12 md:py-8 text-white clip-path-slant">
-          <div className="relative z-60">
-            <p className="text-2xl font-bold leading-tight">
+    <div className="w-full overflow-hidden md:py-8">
+      <div className="flex items-center justify-center">
+        {/* Trust Badge with Slant */}
+        <div className="relative flex-shrink-0 clip-path-slant bg-[#FA7C45] px-3 py-4 md:px-12 md:py-8">
+          <div className="relative z-10">
+            <p className="sm:text-2xl text-[18px] pl-12 md:pl-4 font-bold leading-tight text-white">
               More Than 6,000<br />
               Users Trust<br />
               PixelPulse.
             </p>
           </div>
-
         </div>
 
-        {/* Marquee Container */}
+        {/* Marquee Container with Matching Slant */}
         <div 
-          className="flex-1 overflow-hidden clip-path-slant2 bg-[#f3f3f3] py-4"
+          className="relative flex-1 overflow-hidden -ml-9 clip-path-slant2 bg-[#f3f3f3] py-4"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
@@ -128,9 +127,12 @@ const LogoMarquee: React.FC<LogoMarqueeProps> = ({ logos, speed = 50 }) => {
 
       <style jsx>{`
         .clip-path-slant {
-          clip-path: polygon(0 0, calc(100% - 0px) 0%, 0 500%, 0 00%);
+          clip-path: polygon(0 0, 100% 0, calc(100% - 43px) 100%, 0 100%);
         }
-               
+        
+        .clip-path-slant2 {
+          clip-path: polygon(31px 0, 100% 0, 100% 100%, 0 100%);
+        }
       `}</style>
     </div>
   );
