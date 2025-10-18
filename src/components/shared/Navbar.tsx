@@ -73,7 +73,7 @@ export default function Navbar() {
 
             </div>
             {/* for medium device */}
-            <div className={`flex py-6 lg:hidden  justify-between ${clicked ? 'items-start' : 'items-center'}`}>
+            <div className={`flex py-6 lg:hidden  justify-between ${clicked ? 'items-start' : 'items-start'}`}>
                 <div>
                     <Image
                         width={150}
