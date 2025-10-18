@@ -3,10 +3,10 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/f
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-[#1a1a1a] text-white pb-12 px-6 lg:px-[165px] pt-[90px]">
-      <div className="max-w-7xl mx-auto">
+    <footer className="w-full bg-[#1a1a1a] text-white pb-12 px-6 lg:px-[75px] pt-10 lg:pt-[90px]">
+      <div className="">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12">
+        <div className="grid grid-cols-1 text-center md:text-start md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12">
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <h2 className="text-2xl font-bold mb-4">
@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
 
           {/* Resources */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Resources</h3>
+            <h3 className="text-xl hidden md:block font-bold mb-4">Resources</h3>
             <ul className="space-y-3">
               <li>
                 <span className="text-gray-300 hover:text-white transition-colors cursor-pointer">

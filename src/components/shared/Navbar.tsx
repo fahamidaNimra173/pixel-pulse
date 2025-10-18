@@ -111,7 +111,7 @@ export default function Navbar() {
                             </div>
                             :
                             <button onClick={handleMenu}>
-                                <FaHamburger className="w-7 h-7 text-[#FA7C45]"></FaHamburger>
+                                <FaHamburger className="w-5 h-5 text-[#FA7C45]"></FaHamburger>
 
                             </button>
                     }
