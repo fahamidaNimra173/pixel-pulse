@@ -45,7 +45,7 @@ const FAQ: React.FC<FAQProps> = ({ faqs }) => {
 
     return (
         <div className="w-full md:py-16 py-10 px-6 md:px-12 lg:px-20">
-            <div className="max-w-7xl mx-auto">
+            <div className="lg:max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
                     {/* Left Side - Title */}
                     <div>
